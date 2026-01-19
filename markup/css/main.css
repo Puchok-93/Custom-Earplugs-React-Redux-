@@ -481,3 +481,385 @@ img {
     border-color: #00afff;
     background-color: #00afff;
 }
+
+/* Constructor Earplugs Content */
+.constructor-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 0 100px;
+    margin: 60px 0 0 0;
+}
+
+/* Constructor Earplugs Preview */
+.constructor-earplugs-preview {
+    max-width: 480px;
+}
+
+.earplugs-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.earplugs-preview-img {
+    position: relative;
+    padding: 0 0 80px;
+}
+
+.earplugs-preview-img::before {
+    position: absolute;
+    content: '';
+    width: 76px;
+    height: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: url(/markup/img/3d-icon.svg) center / contain no-repeat;
+}
+
+.earplugs-preview-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid #C4C4C4;
+    padding: 30px 0 0;
+}
+
+.earplugs-preview-info__text {
+    font-family: harmonia;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+    letter-spacing: 0.02em;
+    color: #222222;
+    margin: 0;
+}
+
+.earplugs-preview-info__text--link {
+    text-decoration: none;
+    color: #00afff;
+}
+
+/* Constructor Earplugs Options */
+.constructor-earplugs-options {
+    width: 580px;
+}
+
+.constructor-earplugs-options__title {
+    font-family: harmonia;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    color: #222222;
+    margin: 0;
+}
+
+.earplug-options {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin: 46px 0 0 0;
+}
+
+.earplug-option {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.earplug-option__title {
+    font-family: harmonia;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    color: #222222;
+    margin: 0;
+}
+
+/* Constructor Dropdown */
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #C4C4C4;
+    background: #ffffff;
+}
+
+.dropdown.closed {
+    max-height: 82px;
+}
+
+.dropdown-item {
+    border-bottom: 1px solid red;
+    padding: 0 0 10px;
+}
+
+.dropdown-item:last-of-type {
+    border: none;
+    padding: 0;
+}
+
+.dropdown-item__label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dropdown-item__img {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.dropdown-item__text {
+    font-family: harmonia;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+/* Constructor Option */
+.option-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.option-list--short {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.option-list--colors {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+}
+
+.option-item {
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+    padding: 9px;
+}
+
+.option-item:not(:has(.option-item__img)) {
+    padding: 20px;
+}
+
+.option-item__label {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.option-item__img {
+    width: 60px;
+    height: 60px;
+}
+
+.option-item__img img {
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.option-list--colors .option-item {
+    border-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.option-list--colors .option-item:hover {
+    border-color: #C4C4C4;
+}
+
+.option-list--colors .option-item__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.option-list--colors .option-item__img img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.option-item__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.option-item__text {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: harmonia ;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #222222;
+    margin: 0;
+}
+
+.option-item__text span {
+    font-family: harmonia;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #222222;
+    margin: 0;
+}
+
+.option-item__price {
+    grid-area: price;
+    font-family: harmonia;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #888989;
+    margin: 0;
+}
+
+.earplug-option-controls {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    border: 1px solid #C4C4C4;
+    border-radius: 100px;
+}
+
+.earplug-option-controls__btn {
+    font-family: harmonia;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    color: #222222;
+    background-color: transparent;
+    border: none;
+    padding: 11px 0;
+}
+
+/* Price Bar */
+
+.price-bar {
+    border-radius: 20px 20px 0px 0px;
+    background: #f0f0f0;
+    padding: 24px 0;
+}
+
+.price-bar-box {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.price-bar__total {
+    font-family: harmonia;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+    color: #222222;
+    margin: 0 40px 0 auto;
+}
+
+.price-bar__next-step {
+    border: 1px solid #00afff;
+    border-radius: 5px;
+    background: #00afff;
+    color: #ffffff;
+    font-family: harmonia;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Equipment */
+
+.equipment {
+    border-radius: 20px 20px 0px 0px;
+    background: #f0f0f0;
+    border-bottom: 1px solid var(--Grey, rgba(196, 196, 196, 1));
+    padding: 68px 0;
+}
+
+.equipment-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 45px 80px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.equipment-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #888989;
+    padding: 0 0 7px;
+}
+
+.equipment-list-item__name,
+.equipment-list-item__cost {
+    font-family: harmonia;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+    color: #222222;
+}
+
+.equipment-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.equipment-btn__icon {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #222222;
+    border-radius: 50%;
+}
+
+.equipment-btn__text {
+    font-family: harmonia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+    letter-spacing: 0.02em;
+    color: #222222;
+    margin: 0;
+}
