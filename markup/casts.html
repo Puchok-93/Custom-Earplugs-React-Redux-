@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 cities</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+        <div class="constructor-navigation">
+            <button class="constructor-navigation__step active" type="button">
+                <span class="constructor-navigation__step-count">1</span>
+                <span class="constructor-navigation__step-title">Назначение</span>
+            </button>
+            <button class="constructor-navigation__step active" type="button">
+                <span class="constructor-navigation__step-count">2</span>
+                <span class="constructor-navigation__step-title">Параметры</span>
+            </button>
+            <button class="constructor-navigation__step active" type="button">
+                <span class="constructor-navigation__step-count">3</span>
+                <span class="constructor-navigation__step-title">Слепки</span>
+            </button>
+        </div>
+        <div class="wrapper">
+            <div class="casts-content">
+                <div class="casts-earplugs-preview">
+                    <div class="earplugs-preview">
+                        <div class="earplugs-preview-img">
+                            <img src="../markup/img/earplugs-3d.png" alt="">
+                        </div>
+                        <div class="earplugs-preview-info">
+                            <p class="earplugs-preview-info__text">Редактировать</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="casts">
+                    <div class="casts-heading">
+                        <h2 class="casts__title">Ушные слепки</h2>
+                        <p class="casts__description">
+                            Для создания кастомных берушей необходимо изготовить слепки ваших ушей. 
+                            Это безболезненная процедура, которая занимает 15&nbsp;минут.
+                        </p>
+                    </div>
+                    <div class="shops">
+                        <p class="shops__subtitle">Выберете магазин</p>
+                        <div class="shops-triggers">
+                            <button class="shops-triggers__trigger active" type="button">Москва, Новый Арбат</button>
+                            <button class="shops-triggers__trigger" type="button">Москва, Хлебозвон</button>
+                            <button class="shops-triggers__trigger" type="button">Санкт-Петербург, Литейный</button>
+                        </div>
+                        <div class="shop-content">
+                            <div class="shop-content-block shop-custom-department">
+                                <h3 class="shop-content__title">Контакты отдела Custom</h3>
+                                <div class="shop-content__inner-block">
+                                    <a class="shop-content__link" href="">+7 (929) 650–47–12</a>
+                                    <a class="shop-content__link" href="">+7 (495) 540–49–26</a>
+                                    <a class="shop-content__link" href="">customs@doctorhead.ru</a>
+                                </div>
+                            </div>
+                            <div class="shop-content-block shop-metro">
+                                <h3 class="shop-content__title">Метро</h3>
+                                <div class="shop-content__inner-block">
+                                    <p class="shop-metro__station">
+                                        <svg width="16" heigth="11" id="metro-single" viewBox="0 0 19 13" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="#0078BE" d="M17.6873 11.1832L13.2381 0L9.48655 6.53841L5.73497 0L1.2858 11.1868H0V12.8678H6.69977V11.1868H5.70807L6.67287 8.40882L9.48655 13L12.3002 8.40882L13.265 11.1868H12.2733V12.8678H19V11.1868L17.6873 11.1832Z"/>
+                                        </svg>
+                                        <span class="shop-metro__name">Арбатская</span>
+                                    </p>
+                                    <p class="shop-metro__station">
+                                        <svg width="16" heigth="11" id="metro-single" viewBox="0 0 19 13" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="#0078BE" d="M17.6873 11.1832L13.2381 0L9.48655 6.53841L5.73497 0L1.2858 11.1868H0V12.8678H6.69977V11.1868H5.70807L6.67287 8.40882L9.48655 13L12.3002 8.40882L13.265 11.1868H12.2733V12.8678H19V11.1868L17.6873 11.1832Z"/>
+                                        </svg>
+                                        <span class="shop-metro__name">Смоленская</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="shop-content-block shop-address">
+                                <h3 class="shop-content__title">Адрес</h3>
+                                <div class="shop-content__inner-block">
+                                    <address class="shop-content__address">ул. Новый Арбат, д.15</address>
+                                </div>
+                            </div>
+                            <div class="shop-content-block shop-schedule">
+                                <h3 class="shop-content__title">График работы</h3>
+                                <div class="shop-content__inner-block">
+                                    <p class="shop-schedule__text">Ежедневно</p>
+                                    <p class="shop-schedule__text">с 10:00 до 21:45</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-details">
+                        <p class="contact-details__subtitle">Укажите контактные данные</p>
+                        <form action="">
+                            <div class="registration-input-block">
+                                <input type="text" id="user-name" placeholder="Имя" name="" value="" required="">
+                                <label for="user-name">Имя*</label>
+                            </div>
+                            <div class="registration-input-block">
+                                <input type="text" id="user-name" placeholder="Телефон" name="" value="" required="">
+                                <label for="user-phone">Телефон*</label>
+                            </div>
+                            <div class="registration-input-block">
+                                <input type="text" id="user-email" placeholder="E-mail" name="" value="" required="">
+                                <label for="user-email">E-mail*</label>
+                            </div>
+                            <div class="consent">
+                                <div class="consent-input-block">
+                                    <input class="visually-hidden" type="checkbox" data-validate-field="checkbox_required" id="online-consert-consent">
+                                    <label for="online-consert-consent"></label>
+                                </div>
+                                <a target="_blank" href="/documents/politika-konfidentsialnosti/">Согласие на обработку персональных данных</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="additional-options">
+                        <div class="additional-option">
+                            <p class="additional-option__title">Получить цифровые слепки по E-mail</p>
+                            <div class="additional-option-list">
+                                <div class="additional-option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="additional-option__label" for="">
+                                        <div class="additional-option__info">
+                                            <p class="additional-option__text">Да</p>
+                                            <p class="additional-option__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="additional-option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="additional-option__label" for="">
+                                        <div class="additional-option__info">
+                                            <p class="additional-option__text">Нет</p>
+                                            <p class="additional-option__price">0 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="additional-option">
+                            <p class="additional-option__title">Срок изготовления берушей</p>
+                            <div class="additional-option-list">
+                                <div class="additional-option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="additional-option__label" for="">
+                                        <div class="additional-option__info">
+                                            <p class="additional-option__text">Стандатный, 6–8 рабочих дней</p>
+                                            <p class="additional-option__price">0 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="additional-option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="additional-option__label" for="">
+                                        <div class="additional-option__info">
+                                            <p class="additional-option__text">Ускоренный, 1–2 рабочих дня</p>
+                                            <p class="additional-option__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="price-bar">
+            <div class="price-bar-box">
+                <button class="equipment-btn" type="button">
+                    <span class="equipment-btn__icon"></span>
+                    <span class="equipment-btn__text">Комплектация</span>
+                </button>
+                <p class="price-bar__total">Промежуточный итог: <span class="price-bar__total-value">5000 ₽</span></p>
+                <button class="price-bar__next-step" type="button">Купить</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

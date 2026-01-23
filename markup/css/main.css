@@ -90,7 +90,8 @@ textarea {
 
 button,
 input {
-    overflow: visible
+    overflow: visible;
+    cursor: pointer;
 }
 
 button,
@@ -861,5 +862,353 @@ img {
     text-box-edge: cap alphabetic;
     letter-spacing: 0.02em;
     color: #222222;
+    margin: 0;
+}
+
+/* Casts */
+.casts {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.casts-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    padding: 0 0 100px;
+    margin: 60px 0 0 0;
+}
+
+.casts-earplugs-preview {
+    max-width: 280px;
+}
+
+.casts-earplugs-preview .earplugs-preview-img {
+    padding: 0 0 17px;
+}
+
+.casts-earplugs-preview .earplugs-preview-img::before {
+    display: none;
+}
+
+.casts-earplugs-preview .earplugs-preview-info {
+    padding: 24px 0 0;
+}
+
+
+.casts {
+    width: 100%;
+}
+
+.casts__title {
+    font-family: harmonia;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    color: #222222;
+    margin: 0;
+}
+
+.casts__description {
+    font-family: harmonia;;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: rgba(136, 137, 137, 1);
+    margin: 0;
+}
+
+/* Shops Info */
+
+.shops {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.shops__subtitle {
+    font-family: harmonia;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #222222;
+    margin: 0;
+}
+
+.shops-triggers {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.shops-triggers__trigger {
+    font-family: harmonia;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    border-radius: 100px;
+    background-color: transparent;
+    color: #222222;
+    padding: 14px 24px 10px;
+}
+
+.shops-triggers__trigger.active {
+    background-color: #00afff;
+    border-color: #00afff;
+    color: #ffffff;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+}
+
+.shop-content-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shop-content__inner-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.shop-content__title {
+    font-family: harmonia;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #222222;
+    margin: 0;
+}
+
+.shop-content__link {
+    font-family: harmonia;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #222222;
+    margin: 0;
+
+}
+
+.shop-metro__station,
+.shop-content__address,
+.shop-schedule__text {
+    font-family: harmonia;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #222222;
+    margin: 0;
+}
+
+/* Form */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.contact-details__subtitle {
+    font-family: harmonia;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #222222;
+    margin: 0;
+}
+
+.registration-input-block {
+    position: relative;
+    margin: 0 0 31px 0;
+}
+
+.registration-input-block input {
+    font-family: harmonia;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #0f173f;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #222;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.registration-input-block label {
+    font-family: harmonia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(15, 23, 63, 0.3);
+    margin: 0;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+.registration-input-block input::placeholder {
+    color: transparent;
+}
+
+.registration-input-block input:focus + label,
+.registration-input-block input:not(:placeholder-shown) + label,
+.registration-input-block input:focus ~ label,
+.registration-input-block input:not(:placeholder-shown) ~ label {
+    transform: translateY(-16px);
+    font-size: 12px;
+}
+
+.registration-input-block
+    input[data-validate-field="phone"]:focus::placeholder {
+    color: #e2e2e2;
+}
+
+.consent {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 24px;
+}
+
+.consent-input-block {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.consent-input-block input:checked + label::before {
+    background-image: url(img/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 12px;
+    -webkit-background-size: 16px 12px;
+    background-color: #ffffff;
+}
+
+.consent-input-block label {
+    width: 24px;
+    height: 24px;
+}
+
+.consent-input-block label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #161616;
+    border-radius: 5px;
+}
+
+.consent a {
+    font-family: harmonia;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #161616;
+    margin: 0;
+}
+
+.consent-input-block small {
+    font-family: harmonia;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #161616;
+    margin: 0 0 0 auto;
+}
+
+/* Additional Option */
+.additional-options {
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+}
+
+
+.additional-option {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.additional-option__title {
+    font-family: harmonia;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #222222;
+    margin: 0;
+}
+
+.additional-option-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.additional-option__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(196, 196, 196, 1);
+    border-radius: 100px;
+    padding: 12px 0 9px;
+    cursor: pointer;
+}
+
+.additional-option__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.additional-option__text {
+    font-family: harmonia;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #222222;
+}
+
+.additional-option__price {
+    font-family: harmonia;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #222222;
+    color: #888989;
+}
+
+.additional-option__text,
+.additional-option__price {
     margin: 0;
 }
