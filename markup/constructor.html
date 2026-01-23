@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 cities</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+        <div class="constructor-navigation">
+            <button class="constructor-navigation__step active" type="button">
+                <span class="constructor-navigation__step-count">1</span>
+                <span class="constructor-navigation__step-title">Назначение</span>
+            </button>
+            <button class="constructor-navigation__step" type="button">
+                <span class="constructor-navigation__step-count">2</span>
+                <span class="constructor-navigation__step-title">Параметры</span>
+            </button>
+            <button class="constructor-navigation__step" type="button">
+                <span class="constructor-navigation__step-count">3</span>
+                <span class="constructor-navigation__step-title">Слепки</span>
+            </button>
+        </div>
+        <div class="wrapper">
+            <div class="constructor-content">
+                <div class="constructor-earplugs-preview">
+                    <div class="earplugs-preview">
+                        <div class="earplugs-preview-img">
+                            <img src="../markup/img/earplugs-3d.png" alt="">
+                        </div>
+                        <div class="earplugs-preview-info">
+                            <p class="earplugs-preview-info__text">Почему мы ставим лого на беруши</p>
+                            <a class="earplugs-preview-info__text earplugs-preview-info__text--link" href="#">Если есть вопрос, напишите в чат</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="constructor-earplugs-options">
+                    <h2 class="constructor-earplugs-options__title">Выберите параметры берушей</h2>
+                    <div class="earplug-options">
+                        <div class="earplug-option">
+                            <h3 class="earplug-option__title">Назначение</h3>
+                            <div class="dropdown closed">
+                                <div class="dropdown-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="dropdown-item__label" for="">
+                                        <img class="dropdown-item__img" src="../markup/img/sleep.jpg" alt="">
+                                        <span class="dropdown-item__text">Для сна</span>
+                                    </label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="dropdown-item__label" for="">
+                                        <img class="dropdown-item__img" src="../markup/img/swim.jpg" alt="">
+                                        <span class="dropdown-item__text">Для плавания</span>
+                                    </label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="dropdown-item__label" for="">
+                                        <img class="dropdown-item__img" src="../markup/img/air.jpg" alt="">
+                                        <span class="dropdown-item__text">Для перелётов</span>
+                                    </label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="dropdown-item__label" for="">
+                                        <img class="dropdown-item__img" src="../markup/img/music.jpg" alt="">
+                                        <span class="dropdown-item__text">Для музыкантов</span>
+                                    </label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="dropdown-item__label" for="">
+                                        <img class="dropdown-item__img" src="../markup/img/club.jpg" alt="">
+                                        <span class="dropdown-item__text">Для досуга</span>
+                                    </label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="dropdown-item__label" for="">
+                                        <img class="dropdown-item__img" src="../markup/img/moto.jpg" alt="">
+                                        <span class="dropdown-item__text">Для мотоциклистов</span>
+                                    </label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="dropdown-item__label" for="">
+                                        <img class="dropdown-item__img" src="../markup/img/manufacturing.jpg" alt="">
+                                        <span class="dropdown-item__text">Для производств</span>
+                                    </label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="dropdown-item__label" for="">
+                                        <img class="dropdown-item__img" src="../markup/img/shoot.jpg" alt="">
+                                        <span class="dropdown-item__text">Для стрельбы</span>
+                                    </label>
+                                </div>
+                                <div class="dropdown-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="dropdown-item__label" for="">
+                                        <img class="dropdown-item__img" src="../markup/img/office.jpg" alt="">
+                                        <span class="dropdown-item__text">Для офиса</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="earplug-option">
+                            <h3 class="earplug-option__title">Специализация</h3>
+                            <div class="option-list">
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/spec-vocal.jpg" alt="">
+                                        </div>
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">Для вокалистов <span>(-10 дб)</span></p>
+                                            <p class="option-item__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/spec-engine.jpg" alt="">
+                                        </div>
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">Для звукорежиссёров <span>(-15 дб)</span></p>
+                                            <p class="option-item__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/spec-drum.jpg" alt="">
+                                        </div>
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">Для барабанщиков <span>(-20 дб)</span></p>
+                                            <p class="option-item__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/spec-dj.jpg" alt="">
+                                        </div>
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">Для диджеев <span>(-25 дб)</span></p>
+                                            <p class="option-item__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="earplug-option">
+                            <h3 class="earplug-option__title">Форма</h3>
+                            <div class="option-list option-list--short">
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/form-fullshell.png" alt="">
+                                        </div>
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">FullShell</p>
+                                            <p class="option-item__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img  src="../markup/img/form-fullbody.png" alt=""></div>
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">FullBody</p>
+                                            <p class="option-item__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img  src="../markup/img/form-earcanal.png" alt=""></div>
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">Ear Canal</p>
+                                            <p class="option-item__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="earplug-option">
+                            <h3 class="earplug-option__title">Цвет (Xtreme Silicon)</h3>
+                            <div class="earplug-option-controls">
+                                <button class="earplug-option-controls__btn" type="button">Левая</button>
+                                <button class="earplug-option-controls__btn" type="button">Обе</button>
+                                <button class="earplug-option-controls__btn" type="button">Правая</button>
+                            </div>
+                            <div class="option-list option-list--colors">
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-1.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-2.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-3.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-4.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-5.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-6.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-7.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-8.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-9.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-10.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-11.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-12.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-13.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-14.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/colors/color-15.png" alt="">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="earplug-option">
+                            <h3 class="earplug-option__title">Материал</h3>
+                            <div class="option-list">
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img src="../markup/img/material-silicon.png" alt="">
+                                        </div>
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">Силикон</p>
+                                            <p class="option-item__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img  src="../markup/img/material-acril.png" alt=""></div>
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">Акрил</p>
+                                            <p class="option-item__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="earplug-option">
+                            <h3 class="earplug-option__title">Шнур</h3>
+                            <div class="option-list">
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">Не нужен</p>
+                                            <p class="option-item__price">0 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__img">
+                                            <img  src="../markup/img/cord.jpg" alt=""></div>
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">Нужен</p>
+                                            <p class="option-item__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="earplug-option">
+                            <h3 class="earplug-option__title">Покрытие</h3>
+                            <div class="option-list">
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">Стандартное</p>
+                                            <p class="option-item__price">0 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="option-item">
+                                    <input class="visually-hidden" type="radio" name="purpose-type" id="" >
+                                    <label class="option-item__label" for="">
+                                        <div class="option-item__info">
+                                            <p class="option-item__text">Антибактериальное</p>
+                                            <p class="option-item__price">+500 ₽</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="equipment">
+            <div class="wrapper">
+                <ul class="equipment-list">
+                    <li class="equipment-list-item">
+                        <span class="equipment-list-item__name">Назначение</span>
+                        <span class="equipment-list-item__cost">2000 ₽</span>
+                    </li>
+                    <li class="equipment-list-item">
+                        <span class="equipment-list-item__name">Шнур</span>
+                        <span class="equipment-list-item__cost">0 ₽</span>
+                    </li>
+                    <li class="equipment-list-item">
+                        <span class="equipment-list-item__name">Специализация</span>
+                        <span class="equipment-list-item__cost">200 ₽</span>
+                    </li>
+                    <li class="equipment-list-item">
+                        <span class="equipment-list-item__name">Покрытие</span>
+                        <span class="equipment-list-item__cost">500 ₽</span>
+                    </li>
+                    <li class="equipment-list-item">
+                        <span class="equipment-list-item__name">Форма</span>
+                        <span class="equipment-list-item__cost">500 ₽</span>
+                    </li>
+                    <li class="equipment-list-item">
+                        <span class="equipment-list-item__name">Изготовление слепков</span>
+                        <span class="equipment-list-item__cost">500 ₽</span>
+                    </li>
+                    <li class="equipment-list-item">
+                        <span class="equipment-list-item__name">Цвет</span>
+                        <span class="equipment-list-item__cost">500 ₽</span>
+                    </li>
+                    <li class="equipment-list-item">
+                        <span class="equipment-list-item__name">Отправка слепков</span>
+                        <span class="equipment-list-item__cost">0 ₽</span>
+                    </li>
+                    <li class="equipment-list-item">
+                        <span class="equipment-list-item__name">Материал</span>
+                        <span class="equipment-list-item__cost">500 ₽</span>
+                    </li>
+                    <li class="equipment-list-item">
+                        <span class="equipment-list-item__name">Быстрое изготовление берушей</span>
+                        <span class="equipment-list-item__cost">0 ₽</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="price-bar">
+            <div class="price-bar-box">
+                <button class="equipment-btn" type="button">
+                    <span class="equipment-btn__icon"></span>
+                    <span class="equipment-btn__text">Комплектация</span>
+                </button>
+                <p class="price-bar__total">Промежуточный итог: <span class="price-bar__total-value">5000 ₽</span></p>
+                <button class="price-bar__next-step" type="button">Далее</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
