@@ -1,0 +1,221 @@
+{
+    "productType": "custom_earplugs",
+    "version": 1,
+    "basePrice": 2000,
+    "options": {
+        "purpose": {
+            "type": "enum",
+            "required": true,
+            "values": [
+                {
+                    "id": "sleep",
+                    "title": "Для сна",
+                    "description": "Защищают от бытового шума. Не вызывают дискомфорта на протяжении долгого времени, надёжно фиксируются и не выпадают из ушей во время сна.",
+                    "imageUrl": "/img/purpose/sleep.png",
+                    "priceDelta": 2000
+                },
+                {
+                    "id": "music",
+                    "title": "Для музыкантов",
+                    "description": "Беруши для музыкантов",
+                    "imageUrl": "/img/purpose/music.png",
+                    "priceDelta": 2000
+                },
+                {
+                    "id": "swim",
+                    "title": "Для плавания",
+                    "description": "Беруши для плавания",
+                    "imageUrl": "/img/purpose/swim.png",
+                    "priceDelta": 2000
+                },
+                {
+                    "id": "air",
+                    "title": "Для перелетов",
+                    "description": "Беруши для перелетов",
+                    "imageUrl": "/img/purpose/air.png",
+                    "priceDelta": 2000
+                },
+                {
+                    "id": "moto",
+                    "title": "Для мотоциклистов",
+                    "description": "Беруши для мотоциклистов",
+                    "imageUrl": "/img/purpose/moto.png",
+                    "priceDelta": 2000
+                },
+                {
+                    "id": "club",
+                    "title": "Для досуга",
+                    "description": "Беруши для досуга",
+                    "imageUrl": "/img/purpose/club.png",
+                    "priceDelta": 2000
+                },
+                {
+                    "id": "manufacturing",
+                    "title": "Для производств",
+                    "description": "Беруши для производств",
+                    "imageUrl": "/img/purpose/manufacturing.png",
+                    "priceDelta": 2000
+                },
+                {
+                    "id": "shoot",
+                    "title": "Для стрельбы",
+                    "description": "Беруши для стрельбы",
+                    "imageUrl": "/img/purpose/shoot.png",
+                    "priceDelta": 2000
+                },
+                {
+                    "id": "office",
+                    "title": "Для офиса",
+                    "description": "Беруши для офиса",
+                    "imageUrl": "/img/purpose/office.png",
+                    "priceDelta": 2000
+                }
+            ]
+        },
+        "specialization": {
+            "type": "enum",
+            "required": false,
+            "dependsOn": {
+                "purpose": [
+                    "music", "swim", "sleep"
+                ]
+            },
+            "values": [
+                {
+                    "id": "drummer",
+                    "title": "Для барабанщиков",
+                    "advantage": "-10 дб",
+                    "priceDelta": 500,
+                    "visibleFor": ["music"]
+                },
+                {
+                    "id": "dj",
+                    "title": "Для диджеев",
+                    "advantage": "-15 дб",
+                    "priceDelta": 500,
+                    "visibleFor": ["music"]
+                },
+                {
+                    "id": "vocal",
+                    "title": "Для вокалистов",
+                    "advantage": "-20 дб",
+                    "priceDelta": 500,
+                    "visibleFor": ["music"]
+                },
+                {
+                    "id": "diving",
+                    "title": "Для дайвинга",
+                    "advantage": "-25 дб",
+                    "priceDelta": 500,
+                    "visibleFor": ["swim"]
+                },
+                {
+                    "id": "surf",
+                    "title": "Для серфинга",
+                    "advantage": "-10 дб",
+                    "priceDelta": 500,
+                    "visibleFor": ["swim"]
+                },
+                {
+                    "id": "insomnia",
+                    "title": "От бессонницы ",
+                    "advantage": "-10 дб",
+                    "priceDelta": 500,
+                    "visibleFor": ["sleep"]
+                }
+            ]
+        },
+        "shape": {
+            "type": "enum",
+            "required": true,
+            "values": [
+                {
+                    "id": "fullshell",
+                    "title": "Full Shell",
+                    "priceDelta": 500
+                },
+                {
+                    "id": "fullbody",
+                    "title": "Full Body",
+                    "priceDelta": 500
+                },
+                {
+                    "id": "earcanal",
+                    "title": "Ear Canal",
+                    "priceDelta": 500
+                }
+            ]
+        },
+        "material": {
+            "type": "enum",
+            "required": true,
+            "values": [
+                {
+                    "id": "silicone",
+                    "title": "Силикон",
+                    "priceDelta": 500
+                },
+                {
+                    "id": "acrylic",
+                    "title": "Акрил",
+                    "priceDelta": 500
+                }
+            ]
+        },
+        "color": {
+            "type": "color",
+            "mode": [
+                "both",
+                "separate"
+            ],
+            "values": [
+                {
+                    "id": "purple",
+                    "name": "фиолетовый",
+                    "hex": "#E8D6FF"
+                },
+                {
+                    "id": "pink",
+                    "name": "розовый",
+                    "hex": "#FEC0CE"
+                },
+                {
+                    "id": "yellow",
+                    "name": "желтый",
+                    "hex": "#EADCAA"
+                },
+                {
+                    "id": "green",
+                    "name": "зеленый",
+                    "hex": "#8DF0D1"
+                },
+                {
+                    "id": "blue",
+                    "name": "синий",
+                    "hex": "#AECADF"
+                }
+            ]
+        },
+        "coating": {
+            "type": "enum",
+            "default": "standard",
+            "values": [
+                {
+                    "id": "standard",
+                    "name": "Cтандартное",
+                    "priceDelta": 0
+                },
+                {
+                    "id": "antibacterial",
+                    "name": "Антибактериальное",
+                    "priceDelta": 500
+                }
+            ]
+        },
+        "cord": {
+            "type": "boolean",
+            "title": "Шнур",
+            "priceDelta": 500
+        }
+    }
+}
